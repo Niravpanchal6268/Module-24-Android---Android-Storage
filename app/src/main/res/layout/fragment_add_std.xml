@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddStdFragment">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       >
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="New Student"
+           android:gravity="center"
+           android:textSize="20sp"
+           android:textStyle="bold"
+           android:textColor="@color/black"
+           android:layout_marginBottom="10dp"
+           />
+
+       <ScrollView
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent">
+
+           <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:orientation="vertical">
+
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/firstname_id"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="20dp"
+                   android:hint="First Name">
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:inputType="text" />
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/lastname_id"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="20dp"
+                   android:layout_marginTop="10dp"
+                   android:hint="Last Name">
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:inputType="text" />
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/email_id"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="20dp"
+                   android:layout_marginTop="10dp"
+                   android:hint="Email">
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:inputType="textEmailAddress" />
+               </com.google.android.material.textfield.TextInputLayout>
+
+
+               <Spinner
+                   android:id="@+id/course_spin_id"
+                   style="@style/Widget.AppCompat.Spinner.Underlined"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:spinnerMode="dialog"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginHorizontal="20sp"
+                   />
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/address_id"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="20dp"
+                   android:layout_marginTop="10dp"
+                   android:hint="Address">
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:inputType="textPostalAddress"/>
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/pincode_id"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="20dp"
+                   android:layout_marginTop="10dp"
+                   android:hint="Pincode">
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:inputType="number"/>
+               </com.google.android.material.textfield.TextInputLayout>
+               <Spinner
+                   android:id="@+id/city_spi_id"
+                   style="@style/Widget.AppCompat.Spinner.Underlined"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:spinnerMode="dialog"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginHorizontal="20sp"
+                   />
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/totalfee_id"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="20dp"
+                   android:layout_marginTop="10dp"
+                   android:hint="Total Fee">
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:inputType="number"/>
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/mobile_id"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="20dp"
+                   android:layout_marginTop="10dp"
+                   android:hint="Mobile">
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:inputType="number"/>
+               </com.google.android.material.textfield.TextInputLayout>
+
+
+               <com.google.android.material.button.MaterialButton
+                   android:id="@+id/sumbit_btn_id"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="sumbit"
+                   android:textColor="@color/black"
+                   android:layout_marginHorizontal="50sp"
+                   android:layout_marginTop="10dp"
+                   android:padding="15dp"
+                   />
+
+
+           </LinearLayout>
+
+
+       </ScrollView>
+
+
+   </LinearLayout>
+
+</FrameLayout>

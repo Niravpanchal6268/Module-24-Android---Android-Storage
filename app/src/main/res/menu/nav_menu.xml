@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item android:title="Students">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/add_students_m_id"
+                        android:icon="@drawable/ic_baseline_add_24"
+                        android:title="Add Students" />
+
+                    <item
+                        android:id="@+id/view_student_m_id"
+                        android:icon="@drawable/ic_baseline_view_agenda_24"
+                        android:title="View Students" />
+
+                </group>
+            </menu>
+
+        </item>
+    </group>
+
+    <item android:title="Faculty">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/add_faculty_id"
+                    android:icon="@drawable/ic_baseline_add_24"
+                    android:title="Add Faculty" />
+                <item
+                    android:id="@+id/view_faculty_id"
+                    android:icon="@drawable/ic_baseline_view_agenda_24"
+                    android:title="view Faculty" />
+                <item
+                    android:id="@+id/delete_faculty_id"
+                    android:icon="@drawable/ic_baseline_delete_24"
+                    android:title="Delete Faculty" />
+                <item
+                    android:id="@+id/update_faculty_id"
+                    android:icon="@drawable/ic_baseline_update_24"
+                    android:title="Update Faculty" />
+            </group>
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/log_out_id"
+        android:icon="@drawable/ic_baseline_logout_24"
+        android:title="Log out" />
+
+
+</menu>
